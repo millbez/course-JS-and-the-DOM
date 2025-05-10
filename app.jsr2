@@ -1,0 +1,10 @@
+const hero = document.querySelector('.hero__module');
+function removeElementOnce() {
+    hero.lastElementChild.remove();
+}
+document.addEventListener('click', removeElementOnce);
+
+function removeElementOnce() {
+    hero.lastElementChild.remove();
+    document.removeEventListener('click', removeElementOnce);
+}
